@@ -22,21 +22,21 @@ Below are the commands mentioned to do various tasks as per requirements.
 
         python s3_operations.py create --name sanket123
 
-### Case2: To Upload file into bucket:
+### Case 2: To Upload file into bucket:
 
 First add this bucket's trigger into s3-trigger lambda function. Select 'PUT' as event type while doing it.It checks random name file every second and return the reverse string.
 
         python s3_operations.py upload --name sanket123 --text hello
 
-### Case3: To List all available bucket:
+### Case 3: To List all available bucket:
 
         python s3_operations.py list
 
-### Case4: To Empty bucket before deletion: ( Required Before deleting any bucket)
+### Case 4: To Empty bucket before deletion: ( Required Before deleting any bucket)
 
         python s3_operations.py empty --name sanket123
 
-### Case5: To Delete bucket:
+### Case 5: To Delete bucket:
 
         python s3_operations.py delete --name sanket123
 
