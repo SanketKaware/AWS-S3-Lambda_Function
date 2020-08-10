@@ -2,7 +2,11 @@
 
 s3_operarion.py script lets you create a new bucket, upload file into a bucket, reverse the file content using lambda function, list all bucket, empty, and delete the bucket.
 
-## Here I have used Python v3.7 and Boto3 which is a AWS SDK for Python.
+- This script can run on a local machine that takes a **name** parameter and a **text** parameter. 
+- In whatever account the AWS-CLI has access to on the machine, create command lets you create (if it does not already exist or use the already existing) S3 bucket based on the **name** parameter. By using the upload command, you can upload a **txt** file with a random name inside the S3 bucket with the **text** parameter's contents. 
+- The script should then check the **txt** file every second, and once the Lambda function has changed the contents of the file, the script can then display the updated reversed contents of the file (as written by the Lambda function) and exit.
+
+## Here I have used Boto3 which is a AWS SDK for Python.
 
 ## Prerequisites for Installation :
 
