@@ -11,10 +11,10 @@ Create lambda function called 's3-trigger' and paste 'lambda_function.py' code i
 
 All the required steps for installation are executed using below command.
 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 
-Steps to execute the program:
+## Steps to execute the program:
 
 Below are the commands mentioned to do various tasks as per requirements.
 
@@ -26,11 +26,11 @@ Below are the commands mentioned to do various tasks as per requirements.
 
 First add this bucket's trigger into s3-trigger lambda function. Select 'PUT' as event type while doing it.It checks random name file every second and return the reverse string.
 
-         python s3_operations.py upload --name sanket123 --text hello
+        python s3_operations.py upload --name sanket123 --text hello
 
 ### Case3: To List all available bucket:
 
-         python s3_operations.py list
+        python s3_operations.py list
 
 ### Case4: To Empty bucket before deletion: ( Required Before deleting any bucket)
 
@@ -47,4 +47,4 @@ First add this bucket's trigger into s3-trigger lambda function. Select 'PUT' as
 
 ### Issues
 
-If any error has occurred, please let me know by opening issue.
+        If any error has occurred, please let me know by opening issue.
